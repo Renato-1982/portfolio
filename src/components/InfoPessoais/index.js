@@ -1,7 +1,8 @@
 import React from 'react';
-import { FaDev, FaYoutube, FaLinkedin, FaGithub, FaMapMarkerAlt, FaRegEnvelope, FaVuejs } from 'react-icons/fa';
+import { FaYoutube, FaLinkedin, FaGithub, FaMapMarkerAlt, FaRegEnvelope, FaVuejs, FaIdCard, FaLaptopCode } from 'react-icons/fa';
 import { Container, Informacoes, DadosPerfil, Funcao, RedeSociais, Detalhes,DadosEndereco } from './styles';
 import Imagem from "../../img/1.jpg";
+import CV from "../DadosProjetos/pdf/Renato-Cv.pdf";
 
 export default function InfoPessoais() {
   return (
@@ -12,11 +13,12 @@ export default function InfoPessoais() {
           <h1>Renato Antônio</h1>
         </DadosPerfil>
         <Funcao>
-          <FaDev size={20} />
-          <span>Web Developer</span>
+          <FaLaptopCode size={20} />
+          <span>Desenvolvedor | Gerente Administrativo</span>  
         </Funcao >
         <RedeSociais>
           <div>
+            <a href={CV} target={'_blank'}><FaIdCard size={25} /></a>
             <a href='https://www.youtube.com/@renatoantonio1982' target={'_blank'}><FaYoutube size={25} /></a>
             <a href='https://www.linkedin.com/in/renato-antonio-12b810338/' target={'_blank'}><FaLinkedin size={25} /></a>
             <a href='https://github.com/Renato-1982' target={'_blank'}><FaGithub size={25} /></a>

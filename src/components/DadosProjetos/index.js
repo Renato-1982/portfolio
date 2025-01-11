@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { FaGithub } from 'react-icons/fa';
 import { SkillsItem } from '../../services/data/skill';
 import { Projetos } from '../../services/data/projetos';
-
 import {
   Container, Menu, Cabecalho, OpcoesMenu, Dados, InfoDados,
   Skills, ItemSkill, Card, Itens, ProgressBar, Progress
